@@ -1,0 +1,4 @@
+hello: hello
+dark: Dark
+light: Light
+toggle: Toggle to {mode}

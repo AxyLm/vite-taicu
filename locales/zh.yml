@@ -1,0 +1,5 @@
+hello: 你好
+my: 我的
+dark: 暗夜
+light: 日间
+toggle: 切换到{mode}
