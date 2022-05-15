@@ -4,8 +4,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "~/*": ["src/*"],
-      "@/*": ["src/*"],
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"],
     },
   },
   "include": ["vite.config.ts"]
