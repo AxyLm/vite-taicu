@@ -9,6 +9,8 @@ declare module '@vue/runtime-core' {
     ICarbonLanguage: typeof import('~icons/carbon/language')['default']
     ICarbonMoon: typeof import('~icons/carbon/moon')['default']
     ICarbonSun: typeof import('~icons/carbon/sun')['default']
+    MoveContain: typeof import('./src/components/magicMove/MoveContain.vue')['default']
+    MoveProxy: typeof import('./src/components/magicMove/MoveProxy.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

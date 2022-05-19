@@ -2,7 +2,7 @@ import { createPinia } from "pinia";
 import { router } from "./route";
 import { createApp } from "vue";
 import App from "./App.vue";
-import "./index.less";
+import "./style/index.less";
 import "tailwindcss/tailwind.css";
 
 /*

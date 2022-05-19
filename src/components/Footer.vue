@@ -1,19 +1,15 @@
 <script setup lang="ts" >
-	import { toggleDark, isDark } from "~/composables";
+	import {  isDark } from "~/composables";
 	// import { useI18n } from "vue-i18n";
-	import { useI18n } from "~/composables";
+	import { useI18n, useThemeChang } from "~/composables";
 	const { t, toggleLocale } = useI18n();
-	// const toggleLocale = (locale?: string) => {
-	// 	// change to some real logic
-	// 	const locales = availableLocales;
-	// 	currentLocal.value =
-	// 		locale ||
-	// 		locales[(locales.indexOf(currentLocal.value) + 1) % locales.length];
-	// };
+
+	const { themeAni } = useThemeChang(isDark);
+	
 </script>
 <template>
-	<nav class="text-xl text-center mt">
-		<button class="nav-btn" @click="toggleDark()">
+	<nav class="text-xl text-center">
+		<button class="nav-btn" @click="themeAni">
 			<i-carbon-sun class="h-6 w-6" v-if="!isDark" />
 			<i-carbon-moon class="h-6 w-6" v-else />
 		</button>
