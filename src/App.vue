@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import Layout from '~/layout/Index.vue';
 </script>
 
 <template>
-	<router-view />
+	<router-view></router-view>
 </template>
 
 <style lang="less">
@@ -13,6 +14,7 @@ body {
 }
 #app {
 	font-family: Josefin Sans, sans-serif;
+	font-weight: 300;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

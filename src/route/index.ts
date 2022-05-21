@@ -1,9 +1,17 @@
-import { createRouter, createWebHistory } from "vue-router";
-const routes = [
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+const routes:RouteRecordRaw[] = [
 	{
 		name: "Layout",
 		path: "/",
-		component: () => import("../views/Index.vue"),
+		component: () => import("../layout/Index.vue"),
+		redirect:"home",
+		children: [
+			{
+				name: "Home",
+				path: "home",
+				component: () => import("~/views/Home/Index.vue")
+			}
+		]
 	},
 ];
 const router = createRouter({
