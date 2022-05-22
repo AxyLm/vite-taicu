@@ -18,7 +18,7 @@ export default defineConfig({
 		host: "0.0.0.0",
 		port: 3000,
 		proxy: {},
-		cors: true, //为开发服务器配置 CORS
+		cors: true,
 	},
 	build: {
 		outDir: "dist",

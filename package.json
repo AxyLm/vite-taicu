@@ -22,7 +22,6 @@
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
-    "nes.css.14x": "^1.0.1",
     "path": "^0.12.7",
     "pinia": "^2.0.14",
     "postcss": "^8.4.13",
