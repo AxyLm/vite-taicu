@@ -1,5 +1,6 @@
 // these APIs are auto-imported from @vueuse/core
 import { useToggle, useDark } from "@vueuse/core";
+import { nextTick } from "vue";
 
 export const isDark = useDark();
 export const toggleDark = useToggle(isDark);
@@ -23,7 +24,7 @@ export function useThemeChang(isDark: any) {
 			const rate = Math.max(x, y);
 			const delp = rate * 6 + 4;
 			maskEl.className = `maskEl ${isDark.value ? "bg-base-light" : "bg-base-dark"} transition-colors delay-1000 absolute`;
-			maskEl.style = `width:50px; height:50px; top:${e.clientY - 25}px; left:${e.clientX - 25}px; border-radius: 100%;`;
+			maskEl.setAttribute("style", `width:50px; height:50px; top:${e.clientY - 25}px; left:${e.clientX - 25}px; border-radius: 100%;`);
 			bodyBgEl?.appendChild(maskEl);
 			nextTick(() => {
 				maskEl.style.animation = `${delp}s ease-out scale`;

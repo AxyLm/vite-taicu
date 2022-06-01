@@ -5,7 +5,7 @@
 
 <template>
 	<div class="text-center p-20">
-		<img src="/src/assets/logo.png" class="inline" alt="">
+		<img src="/src/assets/logo.svg" class="inline" alt="">
 		<div>
 			<span class="text-5xl fm1">{{t("helloWorld")}}</span>
 		</div>

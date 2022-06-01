@@ -1,8 +1,7 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import VueI18n from "@intlify/vite-plugin-vue-i18n";
-import path from "path";
-import AutoImport from "unplugin-auto-import/vite";
+import * as path from "path";
 import Icons from "unplugin-icons/vite";
 import Components from "unplugin-vue-components/vite";
 import IconsResolver from "unplugin-icons/resolver";
@@ -51,9 +50,6 @@ export default defineConfig({
 				}),
 			],
 		}),
-		AutoImport({
-			imports: ["vue", "vue-router", "vue-i18n"],
-			dts: "./src/auto-imports.d.ts",
-		}),
 	],
 });
+

@@ -6,7 +6,6 @@
 <br>
 <br>
 
-
 ## 特性
 
 - ⚡️  [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [TypeScript](https://www.typescriptlang.org/zh/) Yes!
@@ -46,17 +45,12 @@ npm build
 | 孟春之月   | 律中太簇                                        |
 | 仲春之月   | 律中夹钟                                        |
 | 季春之月   | 律中姑洗                                        |
-| 孟夏之月   | 律中仲吕                                        |
-| 仲夏之月   | 律中蕤宾                                        |
-| 季夏之月   | 律中林钟                                        |
-| 孟秋之月   | 律中夷则                                        |
-| 仲秋之月   | 律中南吕                                        |
-| 季秋之月   | 律中无射                                        |
+| ...        | ...                                             |
 | 孟冬之月   | 律中应钟                                        |
 | 仲冬之月   | 律中黄钟                                        |
 | 季冬之月   | 律中大吕                                        |
 
-律之太簇，Vue之开始
+律之太簇，Vue的开始 （😜）
 
 跳过创建项目之始的配置环节，快速实现想法。 new Idea()
 

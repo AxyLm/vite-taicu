@@ -26,6 +26,12 @@
 
 	const { themeAni } = useThemeChang(isDark);
 </script>
+<script lang="ts">
+	import { defineComponent } from "vue";
+	export default defineComponent({
+		name: "Header",
+	});
+</script>
 <style lang="less" scoped>
 .header {
 	backdrop-filter: saturate(250%) blur(20px);
