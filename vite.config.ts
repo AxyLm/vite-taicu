@@ -47,7 +47,7 @@ export default defineConfig({
         IconsResolver({
           // to avoid naming conflicts
           // a prefix can be specified for icons
-          prefix: 'i',
+          prefix: 'icon',
         }),
       ],
       dts: 'src/components.d.ts',

@@ -24,4 +24,4 @@ dist-ssr
 *.sln
 *.sw?
 
-./components.d.ts
+src/components.d.ts
