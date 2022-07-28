@@ -1,42 +1,38 @@
 /* ./src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .maskEl {
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	/* border: 1px solid red; */
-	transition-property: opacity;
-	transition-duration: 0s, 0.1s;
-	transition-timing-function: ease, ease;
-	transition-delay: 0s;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  /* border: 1px solid red; */
+  transition-property: opacity;
+  transition-duration: 0s, 0.1s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s;
 }
 .mask_box {
-	position: fixed;
-	z-index: -1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 200vw;
-	height: 200vw;
-	pointer-events: none;
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vw;
+  height: 200vw;
+  pointer-events: none;
 }
 
 @keyframes scale {
-	0% {
-		transform: scale(1);
-		opacity: 1;
-	}
-	50% {
-		transform: scale(250);
-	}
-	100% {
-		transform: scale(500);
-	}
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(250);
+  }
+  100% {
+    transform: scale(500);
+  }
 }
-

@@ -1,24 +1,23 @@
-import { createI18n } from "vue-i18n";
-import { type App } from "vue";
+import { createI18n } from 'vue-i18n';
+import { type App } from 'vue';
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
 //
 // Don't need this? Try vitesse-lite: https://github.com/antfu/vitesse-lite
 const messages = Object.fromEntries(
-	Object.entries(import.meta.globEager("../../locales/*.y(a)?ml")).map(([key, value]) => {
-		const yaml = key.endsWith(".yaml");
-		return [key.slice(14, yaml ? -5 : -4), value.default];
-	})
+  Object.entries(import.meta.globEager('../../locales/*.y(a)?ml')).map(([key, value]) => {
+    const yaml = key.endsWith('.yaml');
+    return [key.slice(14, yaml ? -5 : -4), value.default];
+  }),
 );
 
 export const install = (app: App<Element>) => {
-	const i18n = createI18n({
-		// legacy: true,
-		locale: "zh",
-		messages,
-	});
+  const i18n = createI18n({
+    // legacy: true,
+    locale: 'zh',
+    messages,
+  });
 
-	app.use(i18n);
+  app.use(i18n);
 };
-
