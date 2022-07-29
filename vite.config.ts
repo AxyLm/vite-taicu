@@ -8,15 +8,19 @@ import IconsResolver from 'unplugin-icons/resolver';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  css: {
+    postcss: {
+      plugins: [require('postcss-import'), require('tailwindcss'), require('autoprefixer')],
+    },
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, './src')}/`,
-      '/~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
   server: {
     host: '0.0.0.0',
-    port: 3000,
+    port: 5173,
     proxy: {},
     cors: true,
   },

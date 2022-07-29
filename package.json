@@ -6,16 +6,19 @@
     "prebuild": "lint-staged && vue-tsc --noEmit ",
     "build": "vite build",
     "dev": "vite",
-    "eslint": "eslint 'src/**/*.{ts,tsx,vue,less,css,json,js}' --fix",
+    "eslint": "eslint 'src/**/*.{ {j,t}s?(x),vue,{le,c,sa}ss }' --fix",
+    "format": "prettier '{src/**/*.{js,ts,tsx,md,html,less,css,json,vue},package.json,*.config.js,locales/*.yml}' --write",
     "lint": "lint-staged",
     "lint:prettier": "pretty-quick --verbose",
     "prepare": "husky install",
-    "prettier": "prettier '{src/**/*.{js,ts,tsx,md,html,less,css,json,vue},package.json,tailwind.config.js,locales/*.yml}' --write",
     "preview": "vite preview"
   },
   "lint-staged": {
-    "src/**/*.{js,ts,tsx,md,html,less,css,json,vue}": "prettier --write",
-    "src/**/*.{ts,tsx,vue}": "eslint --fix",
+    "src/**/*.{{j,t}s?(x),vue,{le,c,sa}ss}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "src/**/*.{md,html,json}": "prettier --write",
     "{!(package)*.json,*.code-snippets,.!(browserslist)*rc}": [
       "prettier --write--parser json"
     ],
