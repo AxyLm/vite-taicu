@@ -24,13 +24,7 @@
   },
   "rules": {
     "no-debugger": "error",
-    "no-unused-vars": [
-      "warn",
-      {
-        "args": "after-used",
-        "argsIgnorePattern": "^_"
-      }
-    ],
+    "no-unused-vars": "off",
     "quotes": [
       "warn",
       "single",
@@ -39,6 +33,12 @@
       }
     ], // 使用单引号
     "vue/multi-word-component-names": 0,
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 5 //标签超出5个属性就会换行
+      }
+    ],
     "prettier/prettier": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "vue/script-setup-uses-vars": "off",
