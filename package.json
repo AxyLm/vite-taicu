@@ -61,6 +61,7 @@
     "@iconify/json": "^2.1.43",
     "@intlify/vite-plugin-vue-i18n": "^3.4.0",
     "@types/node": "^17.0.38",
+    "@types/postcss-import": "^14.0.0",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
     "path": "^0.12.7",

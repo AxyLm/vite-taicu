@@ -21,8 +21,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
-    proxy: {},
-    cors: true,
   },
   build: {
     outDir: 'dist',
@@ -33,7 +31,6 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
@@ -41,7 +38,7 @@ export default defineConfig({
     }),
     Icons({
       scale: 1,
-      defaultStyle: ' ', // Style apply to icons
+      defaultStyle: 'display:inline-block', // Style apply to icons
       defaultClass: 'icon', // Class names apply to icons
       autoInstall: true,
       compiler: 'vue3',

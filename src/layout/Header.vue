@@ -6,11 +6,15 @@
         <icon-carbon-sun v-if="!isDark" class="h-6 w-6" />
         <icon-carbon-moon v-else class="h-6 w-6" />
       </button>
-
-      <button class="nav-btn" @click="toggleLocale()">
+      <button class="nav-btn ml-2 text-center" @click="toggleLocale()">
         <icon-carbon-language class="h-6 w-6" />
       </button>
-      <a href="https://github.com/AxyLm/vite-taicu" target="_blank">
+      <a href="http://soulfree.cn" target="_blank" class="ml-2 text-center">
+        <button class="nav-btn">
+          <icon-mdi:blogger class="h-6 w-6" />
+        </button>
+      </a>
+      <a href="https://github.com/AxyLm/vite-taicu" target="_blank" class="ml-2 text-center">
         <button class="nav-btn">
           <icon-carbon:logo-github class="h-6 w-6" />
         </button>
