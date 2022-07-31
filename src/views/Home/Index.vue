@@ -1,29 +1,19 @@
 <script setup lang="ts">
+  import { ref } from 'vue-demi';
   import { useI18n } from 'vue-i18n';
   const { t } = useI18n();
   const str = '</>';
+
+  const count = ref(0);
 </script>
 
 <template>
-  <div class="p-20 text-center">
-    <img src="/src/assets/logo.svg" class="mb-20 inline w-60" alt="" />
-
-    <div>
-      <span class="fm1 text-5xl">{{ t('helloWorld') }}</span>
-    </div>
-    <div class="mt-10 text-lg">
-      <router-link to="/home">
-        <span
-          ><sup>{{ str }}</sup> Home</span
-        >
-      </router-link>
-      <router-link to="/about" class="ml-8">
-        <span
-          ><sup class="sub">{{ str }}</sup> Abount</span
-        >
-      </router-link>
-    </div>
+  <div>
+    <span class="fm1 text-5xl">{{ t('helloWorld') }}</span>
   </div>
+  <p class="mt-5">
+    <var-button @click="count++">{{ count }} 主要按钮</var-button>
+  </p>
 </template>
 
 <style lang="less">
