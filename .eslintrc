@@ -6,6 +6,20 @@
     "es6": true
   },
   "plugins": ["vue", "@typescript-eslint", "prettier", "tailwindcss", "import"],
+  "overrides": [
+    {
+      "files": ["*.vue"],
+      "parser": "vue-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+      },
+      "rules": {
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -16,7 +30,6 @@
     "plugin:prettier/recommended",
     "prettier"
   ],
-  "parser": "vue-eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -39,7 +52,13 @@
         "singleline": 5 //标签超出5个属性就会换行
       }
     ],
-    "prettier/prettier": "off",
+    "prettier/prettier": [
+      "warn",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
     "@typescript-eslint/no-unused-vars": "off",
     "vue/script-setup-uses-vars": "off",
     "tailwindcss/classnames-order": "off",

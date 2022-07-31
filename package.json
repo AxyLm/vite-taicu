@@ -6,15 +6,15 @@
     "prebuild": "lint-staged && vue-tsc --noEmit ",
     "build": "vite build",
     "dev": "vite",
-    "eslint": "eslint 'src/**/*.{ {j,t}s?(x),vue,{le,c,sa}ss }' --fix",
-    "format": "prettier '{src/**/*.{js,ts,tsx,md,html,less,css,json,vue},package.json,*.config.js,locales/*.yml}' --write",
-    "lint": "lint-staged",
+    "lint": "eslint . --fix",
+    "lint:format": "prettier '{src/**/*.{js,ts,tsx,md,html,less,css,json,vue},package.json,*.config.js,locales/*.yml}' --write",
     "lint:prettier": "pretty-quick --verbose",
+    "lint:staged": "lint-staged",
     "prepare": "husky install",
     "preview": "vite preview"
   },
   "lint-staged": {
-    "src/**/*.{{j,t}s?(x),vue,{le,c,sa}ss}": [
+    "src/**/*.js,ts,jsx,tsx,json,vue}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -55,6 +55,7 @@
     "unplugin-auto-import": "^0.7.1",
     "unplugin-vue-components": "^0.19.5",
     "vue": "^3.2.25",
+    "vue-eslint-parser": "^9.0.3",
     "vue-i18n": "9",
     "vue-router": "^4.0.15"
   },

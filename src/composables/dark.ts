@@ -1,11 +1,11 @@
 // these APIs are auto-imported from @vueuse/core
 import { useToggle, useDark } from '@vueuse/core';
-import { nextTick } from 'vue';
+import { nextTick, WritableComputedRef } from 'vue';
 
 export const isDark = useDark();
 export const toggleDark = useToggle(isDark);
 
-export function useThemeChang(isDark: any) {
+export function useThemeChang(isDark: WritableComputedRef<boolean>) {
   return {
     isAnimation(): boolean {
       const maskElBefore = document.querySelector('.maskEl');
