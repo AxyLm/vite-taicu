@@ -1,12 +1,12 @@
 <br>
 <br>
 <br>
-<h1 align='center'>Vite-taicu</h1>
+<h1 align='center'>Vite start</h1>
 <br>
 <br>
 <br>
 
-#### 跳过项目之始的配置环节，快速实现想法。`new FastifyIdeaIdea( );`
+#### 跳过项目之始的配置环节，快速实现想法。`new FastifyIdea();`
 
 <br>
 
