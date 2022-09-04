@@ -13,11 +13,10 @@
 <script setup lang="ts">
   import { useI18n } from 'vue-i18n';
   const { t } = useI18n();
-  const str = '</>';
 </script>
 <script lang="ts">
-  import LayoutHeader from '~/Layout/Header.vue';
-  import LayoutFooter from '~/Layout/Footer.vue';
+  import LayoutHeader from './header.vue';
+  import LayoutFooter from './footer.vue';
   import { defineComponent } from 'vue';
 
   export default defineComponent({

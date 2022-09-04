@@ -57,7 +57,7 @@ yarn prettier
 
 律之太簇，Vue 的开始 （😜）
 
-跳过创建项目之始的配置环节，快速实现想法。 new Idea()
+跳过创建项目之始的配置环节，快速实现想法。 new FastifyIdeaIde( )
 
 <br>
 
