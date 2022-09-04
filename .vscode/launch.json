@@ -8,17 +8,6 @@
       "type": "chrome",
       "request": "launch",
       "name": "Vue Debug for Chrome",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}/src",
-      "breakOnLoad": true,
-      "sourceMapPathOverrides": {
-        "webpack:///src/*": "${webRoot}/*"
-      }
-    },
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Vue Debug for Chrome",
       "url": "http://localhost:5173",
       "webRoot": "${workspaceFolder}/src",
       "sourceMapPathOverrides": {

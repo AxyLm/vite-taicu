@@ -1,57 +1,53 @@
 {
   "files.autoSave": "onWindowChange",
   "files.autoSaveDelay": 2000,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "files.associations": {
+    "*.env.*": "env"
   },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.formatOnSave": true
-  },
-  "[less]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-    "editor.suggest.insertMode": "replace",
-    "gitlens.codeLens.scopes": ["document"]
+  "files.exclude": {
+    ".husky": true,
+    "node_modules": true
   },
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.cursorStyle": "block-outline",
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnType": false,
   "editor.acceptSuggestionOnCommitCharacter": true,
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
+    "source.organizeImports": true
+  },
+  "npm.enableRunFromFolder": true,
+  "[less]": {
+    "editor.formatOnSave": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "gitlens.codeLens.scopes": ["document"]
   },
   "diffEditor.codeLens": true,
   "less.lint.duplicateProperties": "warning",
-  "npm.enableRunFromFolder": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
   "javascript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  "files.exclude": {
-    ".husky": true,
-    "node_modules": false
-  },
+  "typescript.tsdk": "node_modules/typescript/lib",
   "prettier.arrowParens": "always",
-  "prettier.jsxBracketSameLine": true,
-  "prettier.configPath": "./prettier.config.js",
+  "prettier.requireConfig": true,
+  "prettier.configPath": "prettier.config.js",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.quiet": true,
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue"],
+  "eslint.workingDirectories": ["."],
+  "eslint.options": {
+    "overrideConfigFile": ".eslintrc"
+  },
   "search.exclude": {
     "**/.git": true,
     "**/.github": true,
@@ -70,19 +66,6 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "eslint.quiet": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown"
-  ],
   // updated 2022-07-19 06:42
   // https://github.com/antfu/vscode-file-nesting-config
   "explorer.fileNesting.enabled": true,
