@@ -1,6 +1,7 @@
 <template>
   <header class="header sticky top-0 flex h-20 items-center justify-between px-10">
-    <div></div>
+    <div class="bg delay-400 absolute transition-colors"></div>
+    <div class=""> <span class="title">太簇</span></div>
     <div>
       <button class="nav-btn" @click="themeAni">
         <icon-carbon-sun v-if="!isDark" class="h-6 w-6" />
@@ -37,13 +38,27 @@
   });
 </script>
 <style lang="less" scoped>
-  .header {
+  .header .bg {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
     backdrop-filter: saturate(250%) blur(20px);
     box-shadow: 0px 0px 25px 5px rgb(10 10 10 / 12%);
-    // @apply bg-base-1 dark:bg-base-13 bg-opacity-70 dark:bg-opacity-75 transition-colors delay-200;
+  }
+
+  .dark {
+    .header .bg {
+      background: rgba(40, 40, 40, 0.5) !important;
+      box-shadow: 0px 0px 25px 5px rgb(0 0 0 / 12%) !important;
+    }
   }
 
   .nav-btn {
-    @apply w-8 text-center;
+    @apply w-8 text-center transition-none dark:text-base-1 dark:transition-none;
+  }
+  .title {
+    @apply text-2xl font-normal text-base-13   delay-300  dark:text-base-1 dark:transition-colors;
   }
 </style>

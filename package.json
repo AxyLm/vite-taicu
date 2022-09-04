@@ -1,11 +1,15 @@
 {
-  "name": "mysite",
+  "name": "vite-taicu",
   "version": "1.0",
   "private": false,
   "description": "一个vite开发模版（vue3,pinia,ts,eslint,prettier,lint-staged）",
   "keywords": [
     "vue3",
-    "vite"
+    "vite",
+    "pinia",
+    "eslint",
+    "typescript",
+    "prettier"
   ],
   "homepage": "https://github.com/AxyLm/vite-taicu",
   "repository": {

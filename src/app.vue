@@ -4,7 +4,7 @@
 
 <style lang="less">
   body {
-    @apply transition-colors;
+    // @apply transition-colors;
   }
   #app {
     font-family: Josefin Sans, sans-serif;

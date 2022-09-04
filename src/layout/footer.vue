@@ -14,14 +14,14 @@
 </script>
 <template>
   <div class="mt-10 text-center text-lg">
+    <router-link to="/about" class="mx-4" active-class="font-normal">
+      <span>
+        <sup class="sub">{{ str }}</sup> {{ t('about.link_name') }}</span
+      >
+    </router-link>
     <router-link to="/home" class="mx-4" active-class="font-normal">
       <span
         ><sup>{{ str }}</sup> {{ t('home') }}</span
-      >
-    </router-link>
-    <router-link to="/about" class="mx-4" active-class="font-normal">
-      <span>
-        <sup class="sub">{{ str }}</sup> {{ t('about') }}</span
       >
     </router-link>
   </div>

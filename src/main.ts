@@ -1,7 +1,7 @@
-import 'tailwindcss/tailwind.css';
 import { createApp } from 'vue';
 import App from './app.vue';
 import { router } from './route';
+import 'tailwindcss/tailwind.css';
 import './style/index.less';
 
 const app = createApp(App);
