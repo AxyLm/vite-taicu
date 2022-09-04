@@ -30,6 +30,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "gitlens.codeLens.scopes": ["document"]
   },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "diffEditor.codeLens": true,
   "less.lint.duplicateProperties": "warning",
   "javascript.inlayHints.parameterNames.enabled": "literals",

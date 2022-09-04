@@ -32,6 +32,7 @@ module.exports = {
         12: '#141414',
         13: '#000000',
       },
+      skin: colors.blue,
       gray: colors.gray,
       trueGray: colors.neutral,
       red: colors.red,
