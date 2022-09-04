@@ -21,7 +21,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": true
+    "source.organizeImports": false
   },
   "npm.enableRunFromFolder": true,
   "[less]": {

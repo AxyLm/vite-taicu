@@ -34,9 +34,14 @@
     ], // 使用单引号
     "vue/multi-word-component-names": 0,
     "vue/max-attributes-per-line": [
-      "error",
+      "warn",
       {
-        "singleline": 5 //标签超出5个属性就会换行
+        "singleline": {
+          "max": 5
+        },
+        "multiline": {
+          "max": 5
+        }
       }
     ],
     "prettier/prettier": [

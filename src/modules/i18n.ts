@@ -15,7 +15,7 @@ const messages = Object.fromEntries(
 export const install = (app: App<Element>) => {
   const i18n = createI18n({
     // legacy: true,
-    locale: 'zh',
+    locale: 'en',
     messages,
   });
 

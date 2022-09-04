@@ -4,18 +4,27 @@
   const { t, toggleLocale } = useI18n();
 
   const { themeAni } = useThemeChang(isDark);
+  const str = '</>';
+</script>
+<script lang="ts">
+  import { defineComponent } from 'vue';
+  export default defineComponent({
+    name: 'LayoutFooter',
+  });
 </script>
 <template>
-  <nav class="text-center text-xl">
-    <button class="nav-btn" @click="themeAni">
-      <i-carbon-sun v-if="!isDark" class="h-6 w-6" />
-      <i-carbon-moon v-else class="h-6 w-6" />
-    </button>
-
-    <button class="nav-btn" @click="toggleLocale()">
-      <i-carbon-language class="h-6 w-6" />
-    </button>
-  </nav>
+  <div class="mt-10 text-center text-lg">
+    <router-link to="/home" class="mx-4" active-class="font-normal">
+      <span
+        ><sup>{{ str }}</sup> {{ t('home') }}</span
+      >
+    </router-link>
+    <router-link to="/about" class="mx-4" active-class="font-normal">
+      <span>
+        <sup class="sub">{{ str }}</sup> {{ t('about') }}</span
+      >
+    </router-link>
+  </div>
 </template>
 <style lang="less" scoped>
   .nav-btn {

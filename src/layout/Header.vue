@@ -33,7 +33,7 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   export default defineComponent({
-    name: 'VHeader',
+    name: 'LayoutHeader',
   });
 </script>
 <style lang="less" scoped>
@@ -42,6 +42,7 @@
     box-shadow: 0px 0px 25px 5px rgb(10 10 10 / 12%);
     // @apply bg-base-1 dark:bg-base-13 bg-opacity-70 dark:bg-opacity-75 transition-colors delay-200;
   }
+
   .nav-btn {
     @apply w-8 text-center;
   }
