@@ -4,7 +4,6 @@ import {
   NavigationGuardWithThis,
   RouteRecordRaw,
 } from 'vue-router';
-import '@varlet/ui/es/snackbar/style';
 import { type App } from 'vue';
 import Layout from '~/layout/index.vue';
 
