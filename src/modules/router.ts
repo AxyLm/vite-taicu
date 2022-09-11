@@ -47,7 +47,7 @@ export { routes };
 export const install = (app: App<Element>) => {
   const router = createRouter({
     routes,
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL ?? '/'),
   });
   router.beforeEach(beforeEach);
 

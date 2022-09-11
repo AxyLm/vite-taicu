@@ -1,6 +1,6 @@
 {
   "name": "vite-taicu",
-  "version": "1.0",
+  "version": "1.1",
   "private": false,
   "description": "一个vite开发模版（vue3,pinia,ts,eslint,prettier,lint-staged）",
   "keywords": [
@@ -11,7 +11,7 @@
     "typescript",
     "prettier"
   ],
-  "homepage": "https://github.com/AxyLm/vite-taicu",
+  "homepage": "https://taicu.soulfree.cn/",
   "repository": {
     "type": "git",
     "url": "https://github.com/AxyLm/vite-taicu"

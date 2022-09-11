@@ -1,16 +1,14 @@
-<br>
-<br>
-<br>
-<h1 align='center'>Vite start</h1>
-<br>
-<br>
-<br>
+# vite-taicu
 
-#### 跳过项目之始的配置环节，快速实现想法。`new FastifyIdea();`
+![Website](https://img.shields.io/website?url=http%3A%2F%2Ftaicu.soulfree.cn)
 
-<br>
+一个 vite + vue3 开始模版。
 
-特性
+跳过项目之始的配置环节，快速实现想法。`new FastifyIdea();`
+
+[演示](https://taicu.soulfree.cn/)
+
+## 特性
 
 - ⚡️ [Vue 3](https://github.com/vuejs/vue-next), [Vite](https://github.com/vitejs/vite), [TypeScript](https://www.typescriptlang.org/zh/) Yes!
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
@@ -19,8 +17,6 @@
 - 🎨 [Tailwindcss](https://www.tailwindcss.cn/) - 一个功能类优先的 CSS 框架
 - 🛠 [VueUse](https://github.com/antfu/vueuse) - Vue CompositionApi 的集合
 - [Eslint](http://eslint.cn/) + [prettier](https://prettier.io/) + [husky](https://typicode.github.io/husky/#/) 自动格式化...
-
-<br>
 
 ## 使用
 
@@ -42,6 +38,17 @@ yarn build
 yarn prettier
 ```
 
+### 自动部署 git pages
+
+Go to [GitHub Pages](https://github.com/AxyLm/vite-taicu/settings/pages)
+
+1. Under "Build and deployment", under "Source", select **Deploy from a branch**.
+2. Under "Build and deployment", under "Branch", select **gh-pages**
+
+- This option can be modified in [action.yml](./.github/workflows/action.yml#L35) on line 35
+
+3. Click **Save**.
+
 ## 来自
 
 - [Vitesse](https://github.com/antfu/vitesse.git) - [@antfu](https://github.com/antfu)
@@ -58,6 +65,6 @@ yarn prettier
 | 仲冬之月   | 律中黄钟                                           |
 | 季冬之月   | 律中大吕                                           |
 
-😜
+## LICENSE
 
-<br>
+[MIT license](./LICENSE)
