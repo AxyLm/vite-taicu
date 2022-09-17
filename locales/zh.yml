@@ -6,13 +6,14 @@ toggle: 切换到{mode}
 home: Hello
 about:
   link_name: 关于
-  title: 一个 Vue 开发模版
+  title: 一个 Vue3 开发模版
   package_icon: 各种图标集为你所用，浏览：
   package_tailwindcss: 一个功能类优先的 CSS 框架
   package_i18n: 开箱即用
   package_format: 自动格式化。
   package_pinia: 使用 Pinia 管理状态
-  package_vueuse: Vue 组合式ap 集合
+  package_vueuse: Vue 组合式 Api 集合
+  package_license: 完全开源，随心所欲
   desc: 跳过项目之始的配置环节，快速实现想法。
 plus: 增加
 error: 错误

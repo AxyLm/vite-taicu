@@ -5,13 +5,14 @@ toggle: Toggle to {mode}
 home: Hello
 about:
   link_name: About
-  title: A Vue development template
+  title: A Vue3 development template
   package_icon: Use icons from any icon sets
   package_tailwindcss: A utility-first CSS framework
   package_i18n: ready
   package_format: Automatic formatting
   package_pinia: Use Pinia to manage status
   package_vueuse: Collection of Vue Composition Utilities
+  package_license: completely open source to do with as you please
   desc: Skip project configurations and implement ideas quickly.
 my: My
 plus: plus

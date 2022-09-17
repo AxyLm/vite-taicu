@@ -2,7 +2,7 @@
 
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Ftaicu.soulfree.cn)
 
-一个 vite + vue3 开始模版。
+一个 vue3 + vite + ts 的开发模版。
 
 跳过项目之始的配置环节，快速实现想法。`new FastifyIdea();`
 
@@ -49,9 +49,9 @@ Go to [GitHub Pages](https://github.com/AxyLm/vite-taicu/settings/pages)
 
 3. Click **Save**.
 
-## 来自
+<!-- ## 灵感
 
-- [Vitesse](https://github.com/antfu/vitesse.git) - [@antfu](https://github.com/antfu)
+- [Vitesse](https://github.com/antfu/vitesse.git) - [@antfu](https://github.com/antfu) -->
 
 ## 灵感
 
@@ -67,4 +67,4 @@ Go to [GitHub Pages](https://github.com/AxyLm/vite-taicu/settings/pages)
 
 ## LICENSE
 
-[MIT license](./LICENSE)
+[MIT license](./LICENSE) 完全开源，随心所欲

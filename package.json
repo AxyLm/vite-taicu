@@ -2,7 +2,7 @@
   "name": "vite-taicu",
   "version": "1.1",
   "private": false,
-  "description": "一个vite开发模版（vue3,pinia,ts,eslint,prettier,lint-staged）",
+  "description": "一个 vue3 开发模版（vite,pinia,ts,eslint,prettier,lint-staged）",
   "keywords": [
     "vue3",
     "vite",

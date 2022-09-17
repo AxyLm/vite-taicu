@@ -41,6 +41,12 @@
         <a target="_blank" href="https://typicode.github.io/husky/" rel="nofollow">Husky</a>
         {{ $t('about.package_format') }}
       </li>
+      <li>
+        <a target="_blank" href="https://github.com/AxyLm/vite-taicu/blob/main/LICENSE"
+          >MIT License</a
+        >
+        {{ $t('about.package_license') }}
+      </li>
     </ul>
 
     <p class="mt-4 text-lg">{{ $t('about.desc') }} <code> new FastifyIdea(); </code> </p>
