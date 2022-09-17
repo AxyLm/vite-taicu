@@ -7,7 +7,7 @@
     // @apply transition-colors;
   }
   #app {
-    font-family: Josefin Sans, sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

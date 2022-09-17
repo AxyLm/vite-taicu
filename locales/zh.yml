@@ -3,7 +3,6 @@ my: 我的
 dark: 暗夜
 light: 日间
 toggle: 切换到{mode}
-
 home: Hello
 about:
   link_name: 关于
@@ -15,3 +14,4 @@ about:
   package_pinia: 使用 Pinia 管理状态
   package_vueuse: Vue 组合式ap 集合
   desc: 跳过项目之始的配置环节，快速实现想法。
+plus: 增加

@@ -1,18 +1,16 @@
 <script setup lang="ts">
-  import { useI18n } from 'vue-i18n';
   import { useAppStore } from '~/stores/app';
   const { countPlus, count } = useAppStore();
-  const { t } = useI18n();
 </script>
 
 <template>
   <div>
     <div>
-      <span class="fm1 text-5xl">{{ t('helloWorld') }}</span>
+      <span class="fm1 text-5xl">{{ $t('helloWorld') }}</span>
     </div>
     <p class="mt-5">
       <button class="btn w-32" @click="countPlus()">
-        plus {{ $pinia.state.value.app.count }}
+        Plus: {{ $pinia.state.value.app.count }}
       </button>
     </p>
   </div>

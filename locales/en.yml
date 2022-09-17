@@ -2,7 +2,6 @@ helloWorld: Hello World
 dark: Dark
 light: Light
 toggle: Toggle to {mode}
-
 home: Hello
 about:
   link_name: About
@@ -14,3 +13,5 @@ about:
   package_pinia: Use Pinia to manage status
   package_vueuse: Collection of Vue Composition Utilities
   desc: Skip project configurations and implement ideas quickly.
+my: My
+plus: plus

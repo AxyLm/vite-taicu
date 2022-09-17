@@ -1,5 +1,5 @@
 <template>
-  <header class="header sticky top-0 flex h-20 items-center justify-between px-10">
+  <header class="header sticky top-0 flex h-16 items-center justify-between px-10 sm:h-20">
     <div class="bg delay-400 absolute transition-colors"></div>
     <div class=""> <span class="title">太簇</span></div>
     <div>
@@ -24,9 +24,9 @@
   </header>
 </template>
 <script setup lang="ts">
-  import { isDark } from '~/composables';
+  import { isDark, useThemeChang } from '~/composables';
   // import { useI18n } from "vue-i18n";
-  import { useI18n, useThemeChang } from '~/composables';
+  import { useI18n } from '~/modules/i18n';
   const { t, toggleLocale } = useI18n();
 
   const { themeAni } = useThemeChang(isDark);
