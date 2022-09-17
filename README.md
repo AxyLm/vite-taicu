@@ -6,7 +6,7 @@
 
 跳过项目之始的配置环节，快速实现想法。`new FastifyIdea();`
 
-[演示](https://taicu.soulfree.cn/)
+<a target="_blank" href="https://taicu.soulfree.cn">演示</a>
 
 ## 特性
 
