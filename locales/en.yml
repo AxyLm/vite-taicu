@@ -15,3 +15,11 @@ about:
   desc: Skip project configurations and implement ideas quickly.
 my: My
 plus: plus
+count: Count
+error: Error
+request: Request
+successed: Successed
+failed: Failed
+
+msg:
+  request: Request {state}

@@ -15,3 +15,10 @@ about:
   package_vueuse: Vue 组合式ap 集合
   desc: 跳过项目之始的配置环节，快速实现想法。
 plus: 增加
+error: 错误
+request: 请求
+successed: 成功
+failed: 失败
+count: 计数
+msg:
+  request: 请求 {state}

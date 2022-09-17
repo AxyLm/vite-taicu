@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { $t } from '~/modules/i18n';
 
 export const useAppStore = defineStore('app', {
   state: () => {
@@ -14,6 +15,7 @@ export const useAppStore = defineStore('app', {
   actions: {
     countPlus() {
       this.count++;
+      console.log($t('count'), 'is', this.count);
     },
   },
 });
