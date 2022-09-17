@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "file": "assets/index.a2afeb17.js",
+    "file": "assets/index.ef0c3808.js",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
@@ -8,32 +8,32 @@
       "src/views/about/index.vue"
     ],
     "css": [
-      "assets/index.371d5f89.css"
+      "assets/index.33631a7c.css"
     ],
     "assets": [
       "assets/logo.17e50649.svg"
     ]
   },
   "src/views/home/index.vue": {
-    "file": "assets/index.61b58fe2.js",
+    "file": "assets/index.e147df0e.js",
     "src": "src/views/home/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "index.html"
     ],
     "css": [
-      "assets/index.d993d2cf.css"
+      "assets/index.926104c8.css"
     ]
   },
   "src/views/about/index.vue": {
-    "file": "assets/index.f0f9acdd.js",
+    "file": "assets/index.3476ca75.js",
     "src": "src/views/about/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "index.html"
     ],
     "css": [
-      "assets/index.2bf9f560.css"
+      "assets/index.eaaa375b.css"
     ]
   }
 }
