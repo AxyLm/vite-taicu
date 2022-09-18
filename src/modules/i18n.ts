@@ -2,11 +2,10 @@ import { createI18n, useI18n as usei18n, VueI18n } from 'vue-i18n';
 import { type App } from 'vue';
 
 // Import i18n resources
-// https://vitejs.dev/guide/features.html#glob-import
-
-// find & load messages
 const messages = Object.fromEntries(
-  Object.entries(import.meta.globEager('../../locales/*.y(a)?ml')).map(([key, value]) => {
+  Object.entries(
+    import.meta.glob<{ default: any }>('../../locales/*.y(a)?ml', { eager: true }),
+  ).map(([key, value]) => {
     const yaml = key.endsWith('.yaml');
     return [key.slice(14, yaml ? -5 : -4), value.default];
   }),

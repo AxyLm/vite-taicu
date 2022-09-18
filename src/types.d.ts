@@ -19,3 +19,7 @@ interface ImportMetaEnv extends Readonly<Record<string, string>> {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+interface AppModule {
+  install: (app: App<Element>) => void;
+}
