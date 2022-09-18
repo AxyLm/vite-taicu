@@ -13,7 +13,7 @@ about:
   package_pinia: Use Pinia to manage status
   package_vueuse: Collection of Vue Composition Utilities
   package_license: completely open source to do with as you please
-  desc: Skip project configurations and implement ideas quickly.
+  desc: Skip project configurations and implement ideas quickly
 my: My
 plus: plus
 count: Count

@@ -49,7 +49,8 @@
       </li>
     </ul>
 
-    <p class="mt-4 text-lg">{{ $t('about.desc') }} <code> new FastifyIdea(); </code> </p>
+    <p class="mt-4 text-lg">{{ $t('about.desc') }} </p>
+    <code> new FastifyIdea(); </code>
   </div>
 </template>
 
