@@ -5,8 +5,8 @@
     "*.env.*": "env"
   },
   "files.exclude": {
-    ".husky": true,
-    "node_modules": true
+    ".husky": true
+    // "node_modules": true
   },
   "editor.tabSize": 2,
   "editor.formatOnSave": true,

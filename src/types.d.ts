@@ -23,3 +23,9 @@ interface ImportMeta {
 interface AppModule {
   install: (app: App<Element>) => void;
 }
+
+declare module 'nprogress' {
+  const start: () => void;
+  const done: () => void;
+  export { start, done };
+}
